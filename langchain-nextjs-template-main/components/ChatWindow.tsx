@@ -134,11 +134,11 @@ export function ChatWindow(props: {
         </div>
         <div className="flex w-full mt-4">
           <input
-            className="grow mr-8 p-4 rounded"
+            className="grow mr-8 p-4 rounded mt-4"
             value={input}
             placeholder={placeholder ?? "What's it like to be a pirate?"}
-            onChange={handleInputChange}
-          />
+            onChange={handleInputChange}/>
+          
           <button type="submit" className="shrink-0 px-8 py-4 bg-sky-600 rounded w-28">
             <div role="status" className={`${(chatEndpointIsLoading || intermediateStepsLoading) ? "" : "hidden"} flex justify-center`}>
               <svg aria-hidden="true" className="w-6 h-6 text-white animate-spin dark:text-white fill-sky-800" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">

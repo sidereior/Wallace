@@ -2,7 +2,7 @@ import { ChatWindow } from "@/components/ChatWindow";
 
 export default function AgentsPage() {
   const InfoCard = (
-    <div className="p-4 md:p-8 rounded bg-[#25252d] w-full max-h-[85%] overflow-hidden">
+    <div className="p-4 md:p-8 rounded bg-[#25252d] min-w-[100%] max-h-[85%] overflow-hidden">
       <h1 className="text-3xl md:text-4xl mb-4">
         ▲ Next.js + LangChain.js Retrieval Agent 🦜🔗
       </h1>
@@ -93,10 +93,10 @@ export default function AgentsPage() {
       showIngestForm={true}
       showIntermediateStepsToggle={true}
       placeholder={
-        'Beep boop! I\'m a robot retrieval-focused agent! Ask, "What are some ways of doing retrieval in LangChain.js?"'
+        'I am Ripley, your assistant to help you verify carbon offsets. Ask me anyhting about carbon offsets, or upload a document to get started!'
       }
       emoji="🤖"
-      titleText="Robbie the Retrieval Robot"
+      titleText="Ripley"
     ></ChatWindow>
   );
 }

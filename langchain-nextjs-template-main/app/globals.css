@@ -2,9 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 body {
+  background: radial-gradient(circle, #125411, #124001);
   color: #f8f8f8;
-  background: #2a5338;
 }
 
 body input,
@@ -31,3 +33,4 @@ code {
 li {
   padding: 4px;
 }
+

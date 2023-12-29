@@ -2,7 +2,7 @@ import { ChatWindow } from "@/components/ChatWindow";
 
 export default function Home() {
   const InfoCard = (
-    <div className="p-4 md:p-8 rounded bg-[#BACC81] w-full max-h-[85%] overflow-hidden">
+    <div className="p-4 md:p-8 rounded  bg-gradient-to-r to-[#E9E9E5] from-[#E4E4E4] w-full max-h-[85%] overflow-hidden">
       <h1 className="text-3xl md:text-4xl mb-4">
        Chat with RIPLEY, your AI assistant for verifying carbon offsets.
       </h1>
@@ -10,7 +10,7 @@ export default function Home() {
         <li className="hidden text-l md:block">
           💻
           <span className="ml-2">
-            RIPLEY is an AI assistant designed to help you verify carbon offsets. Use this chat to ask RIPLEY questions about carbon offsets and how to verify them.
+            RIPLEY is your personal AI assistant designed to help verify carbon offsets and manage carbon offset projects. Use this chat to ask RIPLEY questions about carbon offsets and how to verify them.
            </span>
         </li>       
 
@@ -40,9 +40,9 @@ export default function Home() {
   return (
     <ChatWindow
       endpoint="api/chat"
-      emoji="🏴‍☠️"
+      emoji=""
       titleText="RIPLEY"
-      placeholder="I'm Ripley, an AI Assistant for verifying carbon offsets. Try asking me a question!"
+      placeholder="I'm Ripley, your AI Assistant for verifying carbon offsets. Try asking me what all can you do?'"
       emptyStateComponent={InfoCard}
     ></ChatWindow>
   );

@@ -96,7 +96,7 @@ code_assistant = client.beta.assistants.create(
     name='Code Assistant Agent',
     instructions="Create accurate Python scripts.",
     model="gpt-4-1106-preview",
-    tools=[{"type": "function", "function": File.openai_schema},
+    tools=[{"type": "function", function": File.openai_schema},
            {"type": "function", "function": ExecutePyFile.openai_schema}]
 )
 

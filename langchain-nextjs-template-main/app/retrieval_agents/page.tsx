@@ -10,7 +10,7 @@ export default function AgentsPage() {
      <li className="hidden text-l md:block">
           💻
           <span className="ml-2">
-            Use this chat to ask RIPLEY about methodologies and spceific projects regarding their verification.
+            Use this chat to ask Wallace about methodologies and spceific projects regarding their verification.
            </span>
         </li>       
 
@@ -18,15 +18,15 @@ export default function AgentsPage() {
           📖
           <span className="ml-2">
             
-            To learn about what you can do with Ripley, check out the <a href="/">Chat with RIPLEY</a> window.
+            To learn about how to best use Wallace or ask general questions, check out the <a href="/">Chat with Wallace</a> window.
            </span>
         </li>       
 
        <li className="hidden text-l md:block">
           🌐
           <span className="ml-2">
-            To learn more about RIPLEY, check out PaidPlanet's Website <a href="https://www.paidplanet.com/"></a>.
-                       </span>
+            To learn more about Wallace, check out PaidPlanet's Website <a href="https://www.paidplanet.com/"></a>.
+           </span>
         </li>     
       
       <li className="text-l">
@@ -45,10 +45,10 @@ export default function AgentsPage() {
       showIngestForm={true}
       showIntermediateStepsToggle={true}
       placeholder={
-        'I am Ripley, your assistant to help you verify carbon offsets.FIX THIS LATER!'
+        'I am Wallace, your assistant to help you verify carbon offsets. FIX THIS LATER!'
       }
-      emoji="🤖"
-      titleText="Ripley"
+      emoji=""
+      titleText="Wallace"
     ></ChatWindow>
   );
 }

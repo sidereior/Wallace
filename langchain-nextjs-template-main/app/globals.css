@@ -5,8 +5,8 @@
 
 
 body {
-  background: radial-gradient(circle, #EA8C00, #E66000);
-  color: black;
+  background: radial-gradient(circle, #FF8E52, #EA8C00);
+  color: #122E37;
 }
 
 body input,
@@ -15,7 +15,7 @@ body textarea {
 }
 
 a {
-  color: #2C97C5;
+  color: #2CB3C5;
 }
 
 a:hover {

@@ -13,7 +13,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>Ripley AI</title>
+        <title>Wallace AI</title>
         <link rel="shortcut icon" href="/images/favicon.ico" />
         <meta
           name="description"

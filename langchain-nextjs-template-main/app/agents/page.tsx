@@ -4,7 +4,7 @@ export default function AgentsPage() {
   const InfoCard = (
     <div className="p-4 md:p-8 rounded bg-[#25252d] w-full max-h-[85%] overflow-hidden">
       <h1 className="text-3xl md:text-4xl mb-4">
-          Ripley Agent Swarms
+          Wallace Agent Swarms
         </h1>
       <ul>
         <li className="text-l">
@@ -79,9 +79,9 @@ export default function AgentsPage() {
     <ChatWindow
       endpoint="api/chat/agents"
       emptyStateComponent={InfoCard}
-      placeholder="I'm Ripley the leading carbon offset vericiation tool."
-      titleText="RIPLEY"
-      emoji="🦜"
+      placeholder="I'm Wallace the leading carbon offset vericiation tool."
+      titleText="Wallace"
+      emoji=""
       showIntermediateStepsToggle={true}
     ></ChatWindow>
   );

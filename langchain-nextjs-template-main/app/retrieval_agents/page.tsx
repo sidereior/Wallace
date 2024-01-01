@@ -2,7 +2,7 @@ import { ChatWindow } from "@/components/ChatWindow";
 
 export default function AgentsPage() {
   const InfoCard = (
-    <div className="p-4 md:p-8 rounded  bg-gradient-to-r to-[#E9E9E5] from-[#E4E4E4] w-full max-h-[85%] overflow-hidden">
+    <div className="p-4 md:p-8 rounded  bg-[#FEF6F0] w-full max-h-[85%] overflow-hidden">
       <h1 className="text-3xl md:text-4xl mb-4">
         Methodologies Overview
       </h1>
@@ -32,7 +32,7 @@ export default function AgentsPage() {
       <li className="text-l">
           👇
           <span className="ml-2">
-            Try asking <code>Does this project meet the requirements of VM-0045?</code> below!
+            Try asking "<code>I've pasted some info about a offset project [here]. Does it meet the requirements of VM0003 v1.3?</code> " below!
           </span>
         </li>
       </ul>

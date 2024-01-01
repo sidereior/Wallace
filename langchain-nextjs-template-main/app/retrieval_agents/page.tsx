@@ -42,10 +42,10 @@ export default function AgentsPage() {
     <ChatWindow
       endpoint="api/chat/retrieval_agents"
       emptyStateComponent={InfoCard}
-      showIngestForm={true}
-      showIntermediateStepsToggle={true}
+      showIngestForm={false}
+      showIntermediateStepsToggle={false}
       placeholder={
-        'I am Wallace, your assistant to help you verify carbon offsets. FIX THIS LATER!'
+        'I am Wallace and this is the tool to ask me questions about methodologies and specific projects regarding their verification. Ask away!'
       }
       emoji=""
       titleText="Wallace"

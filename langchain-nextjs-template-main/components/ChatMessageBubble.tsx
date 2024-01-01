@@ -2,10 +2,10 @@ import type { Message } from "ai/react";
 
 export function ChatMessageBubble(props: { message: Message, aiEmoji?: string, sources: any[] }) {
   const colorClassName =
-    props.message.role === "user" ? "bg-sky-600" : "bg-slate-50 text-black";
+    props.message.role === "user" ? "bg-gradient-to-r from-[#2CB3C5] to-[#BBD3DD]" : "bg-slate-50 text-[#122E37]";
   const alignmentClassName =
     props.message.role === "user" ? "ml-auto" : "mr-auto";
-  const prefix = props.message.role === "user" ? "" : props.aiEmoji;
+  const prefix = props.message.role === "user" ? "" : "";
   return (
     <div
       className={`${alignmentClassName} ${colorClassName} rounded px-4 py-2 max-w-[80%] mb-8 flex`}

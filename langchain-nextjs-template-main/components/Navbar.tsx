@@ -12,6 +12,7 @@ export function Navbar() {
       </a> 
       <a className={`px-2 py-1 rounded border border-[#2CB3C5] ${pathname === "/" ? "text-[#001401] bg-[#EA8C00]" : ""}`} href="/">Chat with Wallace</a>
       <a className={`px-2 py-1 rounded border border-[#2CB3C5] ${pathname === "/retrieval_agents" ? "text-[#001401] bg-[#EA8C00]" : ""}`} href="/retrieval_agents">Methodologies Overview</a>
+      <a className={`px-2 py-1 rounded border border-[#2CB3C5] ${pathname === "/profile" ? "text-[#001401] bg-[#EA8C00]" : ""}`} href="/profile">Profile</a>
     </nav>
   );
 }

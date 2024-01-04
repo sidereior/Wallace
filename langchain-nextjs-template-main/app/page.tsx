@@ -24,7 +24,7 @@ export default function Home() {
        <li className="hidden text-l md:block">
           🌐
           <span className="ml-2">
-            To learn more about Wallace, check out PaidPlanet's Website <a href="https://www.paidplanet.com/"></a>.
+            To learn more about Wallace, check out PaidPlanet&apos;s Website <a href="https://www.paidplanet.com/"></a>.
                        </span>
         </li>     
 

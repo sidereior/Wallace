@@ -9,7 +9,7 @@ const Profile = () => {
             </div>
             <div className="mb-4">
                 <h2 className="text-xl font-bold">Name</h2>
-                <p>John Doe</p>
+                <p>test</p>
             </div>
             <div className="mb-4">
                 <h2 className="text-xl font-bold">Billing</h2>

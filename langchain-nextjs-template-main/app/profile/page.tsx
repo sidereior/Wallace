@@ -1,4 +1,4 @@
-t adimport React from 'react';
+import React from 'react';
 
 const Profile = () => {
     return (

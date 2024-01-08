@@ -19,7 +19,7 @@ export default function handler(
         res.status(200).json({
             name: 'John Doe',
             profilePicture: 'https://via.placeholder.com/150',
-            billing: '$100.00'
+            billing: '$0.00'
         });
     } else {
         // For any other HTTP method, respond with method not allowed

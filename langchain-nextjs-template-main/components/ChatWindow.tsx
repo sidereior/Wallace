@@ -22,7 +22,8 @@ export function ChatWindow(props: {
   showIntermediateStepsToggle?: boolean
 }) {
   const messageContainerRef = useRef<HTMLDivElement | null>(null);
-
+  const [fileUploading, setFileUploading] = useState(false);
+  const [uploadedFileName, setUploadedFileName] = useState("");
   const { endpoint, emptyStateComponent, placeholder, titleText = "An LLM", showIngestForm, showIntermediateStepsToggle, emoji } = props;
 
   const [showIntermediateSteps, setShowIntermediateSteps] = useState(false);
@@ -83,8 +84,16 @@ export function ChatWindow(props: {
   };
 
   const handleFileUpload = (file: any) => {
-    // Handle the uploaded file here
-    console.log(file);
+  setFileUploading(true);
+
+    // Simulate a file upload process
+    setTimeout(() => {
+      setUploadedFileName(file.name);
+      setFileUploading(false);
+      toast(`Uploaded ${file.name}`, {
+        theme: "dark"
+      });
+    }, 2000);    
   };
 
   async function sendMessage(e: FormEvent<HTMLFormElement>) {

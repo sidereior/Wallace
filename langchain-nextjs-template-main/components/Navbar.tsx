@@ -14,7 +14,7 @@ export function Navbar() {
         boxShadow={"md"}
         p={4}
         as="header"
-        position="fixed"
+        position="relative"
         shadow={'0 4px 30px rgba(0, 0, 0, 0.1)'}
         backdropFilter={'blur(8.2px)'}
         alignItems={'center'}>

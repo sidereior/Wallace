@@ -18,19 +18,14 @@ a {
   color: #2CB3C5;
 }
 
-a:hover {
-  border-bottom: 1px solid;
-}
-
 p {
   margin: 8px 0;
 }
 
 code {
-  color: #ffa500;
+  color: #253cd7;
 }
 
 li {
   padding: 4px;
 }
-

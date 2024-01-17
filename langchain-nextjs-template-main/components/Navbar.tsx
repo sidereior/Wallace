@@ -1,18 +1,49 @@
 "use client";
 
+import { Button, Flex, Heading, Image, Spacer } from '@chakra-ui/react';
+import NextLink from 'next/link'
+import { Link } from '@chakra-ui/react'
 import { usePathname } from 'next/navigation';
 
 export function Navbar() {
   const pathname = usePathname();
   return (
-    
-    <nav className="mb-1 top-0 bg-gradient-to-r from-[#E4E4E4] to-[#E9E9E5] fixed w-full z-50 left-0 pl-5 pt-3 pb-3 flex space-x-4">
-        <a href="https://paidplanet.com">
-        <img src="/images/logo-large.png" alt="test" className="h-8 w-auto pr-3" />
-      </a> 
-      <a className={`px-2 py-1 rounded border border-[#2CB3C5] ${pathname === "/" ? "text-[#001401] bg-[#EA8C00]" : ""}`} href="/">Chat with Wallace</a>
-      <a className={`px-2 py-1 rounded border border-[#2CB3C5] ${pathname === "/retrieval_agents" ? "text-[#001401] bg-[#EA8C00]" : ""}`} href="/retrieval_agents">Methodologies Overview</a>
-      <a className={`px-2 py-1 rounded border border-[#2CB3C5] ${pathname === "/profile" ? "text-[#001401] bg-[#EA8C00]" : ""}`} href="/profile">Profile</a>
-    </nav>
+    <>
+      <Flex
+        w={"100%"}
+        boxShadow={"md"}
+        p={4}
+        as="header"
+        position="relative"
+        shadow={'0 4px 30px rgba(0, 0, 0, 0.1)'}
+        backdropFilter={'blur(8.2px)'}
+        alignItems={'center'}>
+        <Heading
+          size={"md"}
+          fontWeight={500}
+          onClick={() => {
+          }}>
+          <Link href="https://paidplanet.com">
+            <Image height={8} src='/images/logo.png' alt='PaidPlanet'></Image>
+          </Link>
+        </Heading>
+        <Spacer />
+        <Button mx={4}>
+          <Link href='/' _hover={{ textDecoration: "none" }}>
+            Chat with Wallace
+          </Link>
+        </Button>
+        <Button mx={4}>
+          <Link href='/retrieval_agents' _hover={{ textDecoration: "none" }}>
+            Methodologies Overview
+          </Link>
+        </Button>
+        <Button mx={4}>
+          <Link href='/profile' _hover={{ textDecoration: "none" }}>
+            Profile
+          </Link>
+        </Button>
+      </Flex >
+    </>
   );
 }

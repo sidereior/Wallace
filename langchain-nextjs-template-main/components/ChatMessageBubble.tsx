@@ -2,7 +2,7 @@ import type { Message } from "ai/react";
 
 export function ChatMessageBubble(props: { message: Message, aiEmoji?: string, sources: any[] }) {
   const colorClassName =
-    props.message.role === "user" ? "bg-gradient-to-r from-[#2CB3C5] to-[#BBD3DD]" : "bg-slate-50 text-[#122E37]";
+    props.message.role === "user" ? "bg-blue-700 text-slate-50" : "bg-slate-50 text-[#122E37]";
   const alignmentClassName =
     props.message.role === "user" ? "ml-auto" : "mr-auto";
   const prefix = props.message.role === "user" ? "" : "";
@@ -26,9 +26,9 @@ export function ChatMessageBubble(props: { message: Message, aiEmoji?: string, s
               <div className="mt-2" key={"source:" + i}>
                 {i + 1}. &quot;{source.pageContent}&quot;{
                   source.metadata?.loc?.lines !== undefined
-                    ? <div><br/>Lines {source.metadata?.loc?.lines?.from} to {source.metadata?.loc?.lines?.to}</div>
+                    ? <div><br />Lines {source.metadata?.loc?.lines?.from} to {source.metadata?.loc?.lines?.to}</div>
                     : ""
-                  }
+                }
               </div>
             ))}
           </code>

@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Lexend } from "next/font/google";
+import { Providers } from './providers'
 
 import { Navbar } from "@/components/Navbar";
 
@@ -34,9 +35,12 @@ export default function RootLayout({
         <meta name="twitter:image" content="/images/og-image.png" />
       </head>
       <body className={lexend.className}>
-        <div className="flex flex-col p-4 md:p-12 h-[100vh]">
+        <div className="flex flex-col h-[100vh]">
+        <Providers>
           <Navbar></Navbar>
           {children}
+          </Providers>
+          
         </div>
       </body>
     </html>

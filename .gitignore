@@ -1,2 +1,3 @@
 /langchain-next-js-template-main/.env.local
 /.vscode
+/langchain-next-js-template-main/node_modules

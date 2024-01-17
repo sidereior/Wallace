@@ -1,11 +1,15 @@
+'use client'
+import { Link } from '@chakra-ui/next-js'
+import { Text } from '@chakra-ui/react';
+
 import { ChatWindow } from "@/components/ChatWindow";
 
 export default function Home() {
   const InfoCard = (
     <div className="p-4 md:p-8 rounded  bg-[#FEF6F0] w-full max-h-[85%] overflow-hidden">
-      <h1 className="text-3xl md:text-4xl mb-4">
-       Chat with Wallace, your AI assistant for verifying carbon offsets.
-      </h1>
+      <Text fontSize='4xl'>
+      Chat with Wallace, your AI assistant for verifying carbon offsets.
+      </Text>
       <ul>
         <li className="hidden text-l md:block">
           💻

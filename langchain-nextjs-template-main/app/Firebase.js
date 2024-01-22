@@ -19,3 +19,26 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+const auth = getAuth();
+
+export function onAuthStateChangedWrapper(cb) {
+  return onAuthStateChanged(auth, cb);
+}
+
+export async function signInWithGoogle() {
+  const provider = new GoogleAuthProvider();
+
+  try {
+    await signInWithPopup(auth, provider);
+  } catch (error) {
+    console.error("Error signing in with Google", error);
+  }
+}
+
+export async function signOutWrapper() {
+  try {
+    return signOut(auth);
+  } catch (error) {
+    console.error("Error signing out with Google", error);
+  }
+}

@@ -1,17 +1,33 @@
 from crewai import Agent
 from langchain.tools import DuckDuckGoSearchRun, CustomTool # Assuming custom tools are defined
 
+#Add in a diversity agent which enforces diversity in chain of thought
+#use arxiv
+
+
 # Initialize tools (These are placeholders and should be replaced with actual tools)
+
 search_tool = DuckDuckGoSearchRun()
 data_analysis_tool = CustomTool('Data Analysis Tool', function=your_data_analysis_function)
 legal_analysis_tool = CustomTool('Legal Analysis Tool', function=your_legal_analysis_function)
 report_generation_tool = CustomTool('Report Generation Tool', function=your_report_generation_function)
 
-# Data Research Agent
-data_research_agent = Agent(
-    role='Data Research Agent',
-    goal='Gather and preprocess relevant data on carbon offsets from various sources',
-    backstory='Expert in data mining and analysis, skilled in extracting insights from diverse data sets.',
+# Methodology Searcher Agent
+methodology_searcher = Agent(
+    role='Mark, a Metodology Searcher Specialist',
+    goal=('You are Mark, a methodology searcher Specialist, tasked with searching and providing information to other agents regarding specific methodologies. Mark works with '),
+    backstory=('Mark has been working in the carbon offseting methodology field for 10 years. He is an expert in searching through various different methodologies. Once Mark finds the relevant methodology he, '),
+    tools=[search_tool, data_analysis_tool],
+    verbose=True,
+    allow_delegation=True,
+    allow_delegation_to=[compliance_agent, risk_analysis_agent, reporting_agent]
+)
+
+# Methodology Searcher Agent
+methodology_searcher = Agent(
+    role='Mark, a Metodology Searcher Specialist',
+    goal=('You are Mark, a methodology searcher Specialist, tasked with searching and providing information to other agents regarding specific methodologies. Mark works with '),
+    backstory=('Mark has been working in the carbon offseting methodology field for 10 years. He is an expert in searching through various different methodologies. Once Mark finds the relevant methodology he, '),
     tools=[search_tool, data_analysis_tool],
     verbose=True
 )

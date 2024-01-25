@@ -35,3 +35,5 @@ yarn-error.log*
 next-env.d.ts
 
 .yarn
+
+/knwo-a3efe-firebase-adminsdk-ffkbn-e90985cb2b.json

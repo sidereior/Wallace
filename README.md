@@ -1,1 +1,1 @@
-# This is Wallace, the leading AI to automate the process of verifying carbon offsets. Check out paidplanet.com for more information and please contact alexander@paidplanet.com if you are interested!
+# more info coming soon
